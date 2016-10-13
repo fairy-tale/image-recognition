@@ -38,7 +38,7 @@ bazel build tensorflow/examples/image_retraining:retrain
 python3 {YOU_PATH}/retrain.py --image_dir {DATASET_PATH}
 ```
 
-× You can add distortion, modify some parameters like this(see codes in retrain.py if you want to know which parameters can be change):
+* You can add distortion, modify some parameters like this(see codes in retrain.py if you want to know which parameters can be change):
 
 ```
 python3 {YOU_PATH}/retrain.py --image_dir {DATASET_PATH} --random_crop 5 --how_many_training_steps=50000
@@ -47,6 +47,7 @@ python3 {YOU_PATH}/retrain.py --image_dir {DATASET_PATH} --random_crop 5 --how_m
 * The output model is saved in /tmp, which is named as output_graph.pb.
 
 * You can use retrain_test.py to test the performance of your retrain model.
+
 #### classification
 * After you retrain the model, you could use classify_image.py to classify the test image.
 
